@@ -2412,14 +2412,6 @@
         return Promise.all(promises);
     };
     __webpack_require__.u = chunkId => chunkId + ".A_temp-bundle.js";
-    __webpack_require__.g = function() {
-        if (typeof globalThis === "object") return globalThis;
-        try {
-            return this || new Function("return this")();
-        } catch (e) {
-            if (typeof window === "object") return window;
-        }
-    }();
     __webpack_require__.o = (obj, prop) => Object.prototype.hasOwnProperty.call(obj, prop);
     (() => {
         const inProgress = {};
@@ -2475,24 +2467,7 @@
             value: true
         });
     };
-    (() => {
-        let scriptUrl;
-        if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
-        const document = __webpack_require__.g.document;
-        if (!scriptUrl && document) {
-            if (document.currentScript?.tagName.toUpperCase() === "SCRIPT") scriptUrl = document.currentScript.src;
-            if (!scriptUrl) {
-                const scripts = document.getElementsByTagName("script");
-                if (scripts.length) {
-                    let i = scripts.length - 1;
-                    while (i > -1 && (!scriptUrl || !/^https?:/.test(scriptUrl))) scriptUrl = scripts[i--].src;
-                }
-            }
-        }
-        if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
-        scriptUrl = scriptUrl.replace(/^blob:|[?#].*$/g, "").replace(/\/[^/]+$/, "/");
-        __webpack_require__.p = scriptUrl;
-    })();
+    __webpack_require__.p = "./";
     (() => {
         __webpack_require__.b = typeof document !== "undefined" && document.baseURI || self.location.href;
         const installedChunks = {
