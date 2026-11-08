@@ -8,7 +8,7 @@ fetch("https://raw.githubusercontent.com/GlitchHunterCoder/Bloxd-Bundles/refs/he
     .then(e=>eval(e))
 ```
 
-# Third-party libraries and credits
+## Third-party libraries and credits
 
 This project bundles third-party software to make developer tools and libraries available in a browser environment.
 
