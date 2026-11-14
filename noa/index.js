@@ -365714,13 +365714,7 @@
     };
     let __webpack_exports__ = {};
     (() => {
-        const mod = __webpack_require__("./node_modules/noa-engine/src/index.js");
-
+        globalThis.noa = __webpack_require__("./node_modules/noa-engine/src/index.js").Engine;
         globalThis.BABYLON = __webpack_require__("./node_modules/@babylonjs/core/index.js");
-
-        Object.defineProperty(globalThis, "noa", {
-            configurable: true,
-            get: () => mod.ENGINE
-        });
     })();
 })();
