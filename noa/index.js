@@ -365715,6 +365715,6 @@
     let __webpack_exports__ = {};
     (() => {
         globalThis.BABYLON = __webpack_require__("./node_modules/@babylonjs/core/index.js");
-        globalThis.noa = __webpack_require__("./node_modules/noa-engine/src/index.js").ENGINE;
+        globalThis.noa = __webpack_require__("./node_modules/noa-engine/src/index.js");
     })();
 })();
