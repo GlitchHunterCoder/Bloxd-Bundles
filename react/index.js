@@ -20534,7 +20534,7 @@
     }
     let __webpack_exports__ = {};
     (() => {
-        globalThis.React = __webpack_require__("./node_modules/react/index.js");
-        globalThis.ReactDOM = __webpack_require__("./node_modules/react-dom/index.js");
+        globalThis.react = __webpack_require__("./node_modules/react/index.js");
+        globalThis.react_dom = __webpack_require__("./node_modules/react-dom/index.js");
     })();
 })();
